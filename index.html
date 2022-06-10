@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Exercise JS Day 2 3</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <!-- Bài tập 1 -->
+    <div class="container">
+      <h1 class="animate__animated animate__bounce">
+        Ex 1:Tính tiền lương nhân viên
+      </h1>
+      <form action="">
+        <div class="form-group">
+          <label for="input">Nhập số ngày làm việc của bạn</label>
+          <input
+            type="text"
+            class="form-control"
+            id="input"
+            placeholder="Nhập ở đây"
+          />
+        </div>
+        <button class="btn btn-success" id="btnTinhLuong">
+          Tính tiền lương
+        </button>
+        <div id="outputEx1" class="mt-2 alert alert-success"></div>
+      </form>
+      <hr />
+      <!-- Bài tập 2 -->
+      <h1 class="animate__animated animate__bounce">
+        Ex 2:Tính giá trị trung bình
+      </h1>
+      <form action="">
+        <div class="form-group">
+          <label for="inputNumber1">Nhập số thứ nhất</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputNumber1"
+            placeholder="Nhập số thứ nhất"
+          />
+        </div>
+        <div class="form-group">
+          <label for="inputNumber2">Nhập số thứ hai</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputNumber2"
+            placeholder="Nhập số thứ hai"
+          />
+        </div>
+        <div class="form-group">
+          <label for="inputNumber3">Nhập số thứ ba</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputNumber3"
+            placeholder="Nhập số thứ ba"
+          />
+        </div>
+        <div class="form-group">
+          <label for="inputNumber4">Nhập số thứ tư</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputNumber4"
+            placeholder="Nhập số thứ tư"
+          />
+        </div>
+        <div class="form-group">
+          <label for="inputNumber5">Nhập số thứ năm</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputNumber5"
+            placeholder="Nhập số thứ năm"
+          />
+        </div>
+        <button class="btn btn-success" id="btnTinhTB">Tính trung bình</button>
+        <div id="outputEx2" class="mt-2 alert alert-success"></div>
+      </form>
+      <hr />
+      <!-- Bài tập 3 -->
+      <h1 class="animate__animated animate__bounce">Ex 3:Quy đổi tiền</h1>
+      <form action="">
+        <div class="form-group">
+          <label for="inputUSD">Nhập số tiền usd</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputUSD"
+            placeholder="Nhập ở đây"
+          />
+        </div>
+        <button class="btn btn-success" id="btnQD">Quy đổi sang vnd</button>
+        <div id="outputEx3" class="mt-2 alert alert-success"></div>
+      </form>
+      <hr />
+      <!-- Bài tập 4 -->
+      <h1 class="animate__animated animate__bounce">
+        Ex 4:Tính diện tích,chu vi hình chữ nhật
+      </h1>
+      <form action="">
+        <div class="form-group">
+          <label for="inputCD">Nhập chiều dài hình chữ nhật</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputCD"
+            placeholder="Chiều dài hình chữ nhật"
+          />
+        </div>
+        <div class="form-group">
+          <label for="inputCR">Nhập chiều rộng hình chữ nhật</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputCR"
+            placeholder="Chiều rộng hình chữ nhật"
+          />
+        </div>
+        <button class="btn btn-success" id="btnDtCv">Tính</button>
+        <div id="outputEx4" class="mt-2 alert alert-success"></div>
+      </form>
+      <hr />
+      <!-- Bài tập 5 -->
+      <h1 class="animate__animated animate__bounce">Ex 5:Tính tổng 2 ký số</h1>
+      <form action="">
+        <div class="form-group">
+          <label for="inputHCS">Nhập số có hai chữ số</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputHCS"
+            placeholder="Nhập ở đây"
+          />
+        </div>
+        <button class="btn btn-success" id="btnHCS">Tính</button>
+        <div id="outputEx5" class="mt-2 alert alert-success"></div>
+      </form>
+    </div>
+    <script src="./main.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
